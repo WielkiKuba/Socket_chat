@@ -1,0 +1,237 @@
+#main{
+    background-color:black;
+    background-image: url('mainPhoto1.png');
+    animation: changeBackground 60s infinite alternate;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+@keyframes changeBackground{
+    0%,100%{ background-image: url('mainPhoto1.png');}
+    16.67% { background-image: url('mainPhoto2.png'); }
+  33.33% { background-image: url('mainPhoto3.png'); }
+  50% { background-image: url('mainPhoto4.png'); }
+  66.67% { background-image: url('mainPhoto5.png'); }
+  83.33% { background-image: url('mainPhoto6.png'); }
+}
+@keyframes disappear {
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+@keyframes appear {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.TOP{
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items:center;
+}
+.divLeft{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.divRight{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 90%;
+    width: 100%;
+    display: flex;
+}
+.container3{
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    height: auto;
+    min-height: 90%;
+    width: 100%;
+}
+.topic{
+    background-color: #2F6F40;
+    border: 8px solid black;
+    border-radius: 15px;
+    width: 50%;
+    height: 90%;
+    padding: 30px;
+    margin: 2%;
+}
+.topic h1{
+    font-family: 'Arial Black',Arial,sans-serif;
+}
+.topic p{
+    font-family: MathJax_Typewriter, "Courier New", Courier, monospace;
+}
+#small{
+    height: 20%;
+}
+#serverIp{
+    height: 50%;
+}
+#addButton{
+    height: 50%;
+}
+textarea{
+    height: 70%;
+    width: 40%;
+    resize: none;
+}
+table{
+    background-color: #327744;
+    width: 100%;
+    height: 10%;
+    margin: 0%;
+    padding: 0%;
+    border-color:black;
+}
+th{
+    background-color:#5DDD7F ;
+    width: 25%;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+.logoDiv h2{
+    color: #5DDED7;
+    display: none;
+}
+.blackDiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    height: 500px;
+}
+.logoDiv{
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.3%;
+}
+.logoDiv:hover h2{
+    display: flex;
+    animation: appear 1.5s forwards;
+}
+.logoDiv:hover img{
+    animation: 1.5s forwards;
+    display: none;
+}
+th:hover{
+    background-color: #5DDED7;
+    border:4px solid black;
+}
+.innerNewBorder{
+    height: 33.3%;
+    width: 100%;
+}
+.newBorder{
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    width: 40%;
+}
+.newBorder2{
+    border: 8px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80%;
+    width: 40%;
+}
+.container2{
+    height: 90%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    font-family: Arial;
+    font-variant: normal;
+    font-size: 200%;
+    color: black;
+    text-decoration: none;
+}
+.BOTTOM{
+    width: 100%;
+    height: 30%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.halfTransparentDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color:rgba(97, 229, 133, 0.5);
+    color: white;
+    height: 40%;
+}
+input,button{
+    width: 20%;
+    height: 10%;
+    min-height: 50px;
+}
+.newBorder3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+    border: 8px solid black;
+}
+#textarea1{
+    width: 100%;
+    height: 90%;
+}
+#textarea2{
+    width: 100%;
+    height: 90%;
+}
+#refreshButton{
+    width: 100%;
+    height: 10%;
+}
+#invalidLogin{
+    visibility: hidden;
+    color:#121708;
+}

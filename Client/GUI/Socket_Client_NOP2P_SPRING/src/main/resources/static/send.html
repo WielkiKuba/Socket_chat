@@ -1,0 +1,54 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Messengex-send</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            border: 0%;
+            background-image: url('grass.jpg');
+        }
+    </style>
+</head>
+<body>
+    <table class="mainPage">
+        <tr>
+          <th><a href="blog.html">BLOG</a></th>
+          <th><a href="read.html">READ MESSAGE</a></th>
+          <th><a href="server.html">CHANGE SERVER</a></th>
+          <th><a href="index.html">LOG OUT</a></th>
+        </tr>
+    </table>
+    <div class="container">
+        <div class="divLeft">
+            <div class="newBorder2">
+                <textarea name="textarea" id="textarea1" cols="30" rows="10"></textarea>
+                <button id="refreshButton">REFRESH</button>
+            </div>
+        </div>
+        <div class="divRight">
+            <div class="newBorder">
+                <input type="text" id="reciverIp" class="innerNewBorder" placeholder="Enter a reciver's ip address">
+                <input type="text" id="message" class="innerNewBorder" placeholder="Enter a message">
+                <button id="sendButton" class="innerNewBorder">SEND</button>
+            </div>
+        </div>
+    </div>
+    <div class="blackDiv">
+        <div class="logoDiv" id="a1">
+            <img src="icon1.jpg" width="300px" height="300px" alt="icon1">
+            <h2 id="b1">Strona WWW to tylko GUI do właściwej aplikacji za ktora odpowiada kod napisany w Java/Spring</h2>
+        </div>
+        <div class="logoDiv" id="a2">
+            <img src="icon2.jpg" width="300px" height="300px" alt="icon2">
+            <h2 id="b2">Wejdz po wiecej na <br>GitHub: WielkiKuba </h2>
+        </div>
+        <div class="logoDiv" id="a3">
+            <img src="icon3.jpg" width="300px" height="300px" alt="icon3">
+            <h2 id="b3">Strona to bardzo prosty komunikator np. Messenger lub WhatsApp.Obslguje logowanie sie do bazy danych mySQL.
+                Narazie w tej wersji połączenie z serwerem nie jest szyfrowane.
+            </h2>
+        </div>
+    </div>
+    <script src="sendScript.js"></script>
+</body>
